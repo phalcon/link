@@ -47,18 +47,32 @@ $app->get(
 <html lang="en">
 <title>Phalcon Link</title>
 <head>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" 
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+          crossorigin="anonymous">
 </head>
 <body>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Stub</th>
+        <th>URL</th>
+    </tr>
+    </thead>
+    <tbody>
 %s
+    </tbody>
+</thead>
+</table>
 </body>
 </html>
 EOF;
-            $template = '<a href="%s">%s</a><br>';
-            $links    = sprintf($template, $routes['default'], 'Website');
+            $template = '<tr><td><a href="%s">%s</td><td>%s</td></tr>' . PHP_EOL;
+            $links    = sprintf($template, $routes['default'], 'Website', $routes['default']);
             foreach ($routes as $key => $url) {
                 if ('default' !== $key) {
-                    $links .= sprintf($template, $url, $key);
+                    $links .= sprintf($template, $url, $key, $url);
                 }
             }
 
