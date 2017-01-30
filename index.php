@@ -68,12 +68,18 @@ $app->get(
 </body>
 </html>
 EOF;
-            $template = '<tr><td><a href="%s">%s</td><td>%s</td></tr>' . PHP_EOL;
-            $links    = sprintf($template, $routes['default'], 'Website', $routes['default']);
+            $template = '<tr><td><a href="%s">%s</a></td><td><a href="%s">%s</a></td></tr>' . PHP_EOL;
+            $links    = sprintf(
+                $template,
+                $routes['default'],
+                'Website',
+                $routes['default'],
+                $routes['default']
+            );
             ksort($routes);
             foreach ($routes as $key => $url) {
                 if ('default' !== $key) {
-                    $links .= sprintf($template, $url, $key, $url);
+                    $links .= sprintf($template, $url, $key, $url, $url);
                 }
             }
 
