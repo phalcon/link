@@ -35,6 +35,33 @@ $app->notFound(
 );
 
 $app->get(
+    '/',
+    function ($url) use ($app, $routes) {
+        $output = <<<EOF
+<!DOCTYPE html>
+<html lang="en">
+<title>Phalcon Link</title>
+<body>
+%s
+</body>
+</html>
+EOF;
+        $template = '<a href="%s">%s</a>' . PHP_EOL;
+        $links    = sprintf($template, $routes['default'], 'Website');
+        foreach ($routes as $key => $url) {
+            if ('default' !== $key) {
+                $links .= sprintf($template, $url, $key);
+            }
+        }
+
+        $output = sprintf($output, $links);
+        $app->response->setContent($output);
+
+        return $app->response->send();
+    }
+);
+
+$app->get(
     '/{url}',
     function ($url) use ($app, $routes) {
         $url = strtolower($url);
