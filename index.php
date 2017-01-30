@@ -70,6 +70,7 @@ $app->get(
 EOF;
             $template = '<tr><td><a href="%s">%s</td><td>%s</td></tr>' . PHP_EOL;
             $links    = sprintf($template, $routes['default'], 'Website', $routes['default']);
+            ksort($routes);
             foreach ($routes as $key => $url) {
                 if ('default' !== $key) {
                     $links .= sprintf($template, $url, $key, $url);
