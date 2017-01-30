@@ -46,12 +46,15 @@ $app->get(
 <!DOCTYPE html>
 <html lang="en">
 <title>Phalcon Link</title>
+<head>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
 <body>
 %s
 </body>
 </html>
 EOF;
-            $template = '<a href="%s">%s</a>' . PHP_EOL;
+            $template = '<a href="%s">%s</a><br>';
             $links    = sprintf($template, $routes['default'], 'Website');
             foreach ($routes as $key => $url) {
                 if ('default' !== $key) {
