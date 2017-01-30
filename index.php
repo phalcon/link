@@ -35,9 +35,14 @@ $app->notFound(
 );
 
 $app->get(
-    '/',
+    '/{url}',
     function ($url) use ($app, $routes) {
-        $output = <<<EOF
+
+        /**
+         * Landing page
+         */
+        if (true === empty($url)) {
+            $output   = <<<EOF
 <!DOCTYPE html>
 <html lang="en">
 <title>Phalcon Link</title>
@@ -46,32 +51,29 @@ $app->get(
 </body>
 </html>
 EOF;
-        $template = '<a href="%s">%s</a>' . PHP_EOL;
-        $links    = sprintf($template, $routes['default'], 'Website');
-        foreach ($routes as $key => $url) {
-            if ('default' !== $key) {
-                $links .= sprintf($template, $url, $key);
+            $template = '<a href="%s">%s</a>' . PHP_EOL;
+            $links    = sprintf($template, $routes['default'], 'Website');
+            foreach ($routes as $key => $url) {
+                if ('default' !== $key) {
+                    $links .= sprintf($template, $url, $key);
+                }
             }
-        }
 
-        $output = sprintf($output, $links);
-        $app->response->setContent($output);
+            $output = sprintf($output, $links);
+            $app->response->setContent($output);
 
-        return $app->response->send();
-    }
-);
-
-$app->get(
-    '/{url}',
-    function ($url) use ($app, $routes) {
-        $url = strtolower($url);
-        if (true === array_key_exists($url, $routes)) {
-             $redirect = $routes[$url];
+            return $app->response->send();
         } else {
-            $redirect = $routes['default'];
-        }
+            $url = strtolower($url);
+            if (true === array_key_exists($url, $routes)) {
+                 $redirect = $routes[$url];
+            } else {
+                $redirect = $routes['default'];
+            }
 
-        return $app->response->redirect($redirect, true);
+            return $app->response->redirect($redirect, true);
+        }
+        }
     }
 );
 
