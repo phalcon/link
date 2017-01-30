@@ -73,7 +73,6 @@ EOF;
 
             return $app->response->redirect($redirect, true);
         }
-        }
     }
 );
 
