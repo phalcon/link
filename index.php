@@ -1,6 +1,7 @@
 <?php
 
 $routes = [
+    'about'       => 'https://phalconphp.com/en/about',
     'donate'      => 'https://patreon.com/phalcon',
     'fund'        => 'https://patreon.com/phalcon',
     'funding'     => 'https://patreon.com/phalcon',
