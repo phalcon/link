@@ -94,7 +94,7 @@ EOF;
     } else {
         $url = strtolower($url);
         if ('download' === $url) {
-            $url = sprintf('download/%platform/%s/%s',  $platform,$category, $version);
+            $url = sprintf('download/%s/%s/%s',  $platform,$category, $version);
         }
 
         if (true === array_key_exists($url, $routes)) {
