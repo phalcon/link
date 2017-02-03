@@ -45,9 +45,8 @@ $routes = [
 
 $app = new \Phalcon\Mvc\Micro();
 
-$routeProcess = function ($url, $platform, $category, $version) use ($app, $routes) {
-    if (true === empty($url)) {
-        $output   = <<<EOF
+$getBase      = function () use ($app, $routes) {
+    $output   = <<<EOF
 <!DOCTYPE html>
 <html lang="en">
 <title>Phalcon Link</title>
@@ -78,41 +77,62 @@ $routeProcess = function ($url, $platform, $category, $version) use ($app, $rout
 </body>
 </html>
 EOF;
-        $template = '<tr><td><a href="https://phalcon.link/%s">%s</a></td><td><a href="%s">%s</a></td></tr>' . PHP_EOL;
-        $links    = sprintf(
-            $template,
-            'www',
-            'Website',
-            $routes['default'],
-            $routes['default']
-        );
-        ksort($routes);
-        foreach ($routes as $key => $url) {
-            if ('default' !== $key) {
-                $links .= sprintf($template, $key, $key, $url, $url);
+    $template = '<tr><td><a href="https://phalcon.link/%s">%s</a></td><td><a href="%s">%s</a></td></tr>' . PHP_EOL;
+    $links    = sprintf(
+        $template,
+        'www',
+        'Website',
+        $routes['default'],
+        $routes['default']
+    );
+    ksort($routes);
+    foreach ($routes as $key => $url) {
+        if ('default' !== $key) {
+            $links .= sprintf($template, $key, $key, $url, $url);
+        }
+    }
+
+    $output = sprintf($output, $links);
+    $app->response->setContent($output);
+
+    return $app->response->send();
+};
+$getRedirect  = function ($url, $platform, $category, $version) use ($app, $routes) {
+    $url = strtolower($url);
+    switch ($url) {
+        case 'download':
+            switch ($platform) {
+                case 'linux':
+                    $url = 'download/linux';
+                    break;
+                case 'windows':
+                    $url = sprintf(
+                        'download/%s/%s/%s',
+                        $platform,
+                        $category,
+                        $version
+                    );
+                    break;
             }
-        }
+            break;
+        case 'team':
+            $url = sprintf('team/%s', $platform);
+            break;
+    }
 
-        $output = sprintf($output, $links);
-        $app->response->setContent($output);
-
-        return $app->response->send();
+    if (true === array_key_exists($url, $routes)) {
+        $redirect = $routes[$url];
     } else {
-        $url = strtolower($url);
-        if ('download' === $url) {
-            if ('linux' === $platform) {
-                $url = 'download/linux';
-            } elseif ('windows' === $platform)
-                $url = sprintf('download/%s/%s/%s',  $platform,$category, $version);
-        }
+        $redirect = $routes['default'];
+    }
 
-        if (true === array_key_exists($url, $routes)) {
-            $redirect = $routes[$url];
-        } else {
-            $redirect = $routes['default'];
-        }
-
-        return $app->response->redirect($redirect, true);
+    return $app->response->redirect($redirect, true);
+};
+$routeProcess = function ($url, $platform, $category, $version) use ($app, $routes, $getBase, $getRedirect) {
+    if (true === empty($url)) {
+        return $getBase();
+    } else {
+        return $getRedirect($url, $platform, $category, $version);
     }
 };
 
