@@ -94,7 +94,10 @@ EOF;
     } else {
         $url = strtolower($url);
         if ('download' === $url) {
-            $url = sprintf('download/%s/%s/%s',  $platform,$category, $version);
+            if ('linux' === $platform) {
+                $url = 'download/linux';
+            } elseif ('windows' === $platform)
+                $url = sprintf('download/%s/%s/%s',  $platform,$category, $version);
         }
 
         if (true === array_key_exists($url, $routes)) {
