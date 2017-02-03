@@ -34,6 +34,11 @@ $routes = [
     'support_us'                         => 'https://patreon.com/phalcon',
     't'                                  => 'https://twitter.com/phalconphp',
     'team'                               => 'https://phalconphp.com/en/team',
+    'team/andres'                        => 'https://github.com/andresgutierrez',
+    'team/eduar'                         => 'https://github.com/carvajaldiazeduar',
+    'team/nikolay'                       => 'https://github.com/xboston',
+    'team/nikos'                         => 'https://github.com/niden',
+    'team/serghei'                       => 'https://github.com/sergeyklay',
     'twitter'                            => 'https://twitter.com/phalconphp',
     'default'                            => 'https://phalconphp.com',
 ];
