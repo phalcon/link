@@ -2,25 +2,9 @@
 
 $routes = [
     'about'                              => 'https://phalconphp.com/en/about',
-    'donate'                             => 'https://patreon.com/phalcon',
-    'fund'                               => 'https://patreon.com/phalcon',
-    'funding'                            => 'https://patreon.com/phalcon',
-    'support_us'                         => 'https://patreon.com/phalcon',
-    'forum'                              => 'https://forum.phalconphp.com',
-    'slack'                              => 'https://phalconchats.slack.com/messages/general/',
-    'github'                             => 'https://github.com/phalcon/cphalcon',
-    'github-docs'                        => 'https://github.com/phalcon/docs',
     'docs'                               => 'https://docs.phalconphp.com',
+    'donate'                             => 'https://patreon.com/phalcon',
     'download'                           => 'https://phalconphp.com/en/download',
-    'team'                               => 'https://phalconphp.com/en/team',
-    'store'                              => 'https://teespring.com/phalcon',
-    't'                                  => 'https://twitter.com/phalconphp',
-    'twitter'                            => 'https://twitter.com/phalconphp',
-    'fb'                                 => 'https://www.facebook.com/Phalcon-Framework-134230726685897/',
-    'facebook'                           => 'https://teespring.com/phalcon',
-    'g+'                                 => 'https://plus.google.com/u/0/b/102376109340560896457/+PhalconPHP',
-    'gab'                                => 'https://gab.ai/phalcon',
-    'resources'                          => 'http://phalconist.com',
     'download/linux'                     => 'https://packagecloud.io/phalcon/stable',
     'download/windows/latest/x86-70'     => 'https://my.pcloud.com/publink/show?code=XZXsYlZ42Oy3R3pmehiNhieUe0yluyOeNey',
     'download/windows/latest/x86-70-nts' => 'https://my.pcloud.com/publink/show?code=XZKWYlZaMowNH6UL87hcRCvEtNOWzKS7h6y',
@@ -34,6 +18,22 @@ $routes = [
     'download/windows/latest/x64-56-nts' => 'https://my.pcloud.com/publink/show?code=XZDsYlZemhOBtrlY50cw7fcdW5hayCl7Owy',
     'download/windows/latest/x64-55'     => 'https://my.pcloud.com/publink/show?code=XZYDYlZ5Q50SUlOEezGkBObgsLnVm6kg9sV',
     'download/windows/latest/x64-55-nts' => 'https://my.pcloud.com/publink/show?code=XZQDYlZtBbbYstYpahQP3528hx0A8YFHpSy',
+    'facebook'                           => 'https://teespring.com/phalcon',
+    'fb'                                 => 'https://www.facebook.com/Phalcon-Framework-134230726685897/',
+    'forum'                              => 'https://forum.phalconphp.com',
+    'fund'                               => 'https://patreon.com/phalcon',
+    'funding'                            => 'https://patreon.com/phalcon',
+    'g+'                                 => 'https://plus.google.com/u/0/b/102376109340560896457/+PhalconPHP',
+    'gab'                                => 'https://gab.ai/phalcon',
+    'github'                             => 'https://github.com/phalcon/cphalcon',
+    'github-docs'                        => 'https://github.com/phalcon/docs',
+    'resources'                          => 'http://phalconist.com',
+    'slack'                              => 'https://phalconchats.slack.com/messages/general/',
+    'store'                              => 'https://teespring.com/phalcon',
+    'support_us'                         => 'https://patreon.com/phalcon',
+    't'                                  => 'https://twitter.com/phalconphp',
+    'team'                               => 'https://phalconphp.com/en/team',
+    'twitter'                            => 'https://twitter.com/phalconphp',
     'default'                            => 'https://phalconphp.com',
 ];
 
@@ -106,7 +106,6 @@ EOF;
             $redirect = $routes['default'];
         }
 
-
         return $app->response->redirect($redirect, true);
     }
 };
@@ -120,6 +119,8 @@ $app->notFound(
     }
 );
 $app->get('/{url}', $routeProcess);
+$app->get('/{url}/{platform}', $routeProcess);
+$app->get('/{url}/{platform}/{category}', $routeProcess);
 $app->get('/{url}/{platform}/{category}/{version}', $routeProcess);
 
 $app->handle();
