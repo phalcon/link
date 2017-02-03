@@ -2,6 +2,7 @@
 
 $routes = [
     'about'                              => 'https://phalconphp.com/en/about',
+    'blog'                               => 'https://blog.phalconphp.com',
     'docs'                               => 'https://docs.phalconphp.com',
     'donate'                             => 'https://patreon.com/phalcon',
     'download'                           => 'https://phalconphp.com/en/download',
