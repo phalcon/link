@@ -1,44 +1,45 @@
 <?php
 
 $routes = [
-    'about'                      => 'https://phalconphp.com/en/about',
-    'donate'                     => 'https://patreon.com/phalcon',
-    'fund'                       => 'https://patreon.com/phalcon',
-    'funding'                    => 'https://patreon.com/phalcon',
-    'support_us'                 => 'https://patreon.com/phalcon',
-    'forum'                      => 'https://forum.phalconphp.com',
-    'slack'                      => 'https://phalconchats.slack.com/messages/general/',
-    'github'                     => 'https://github.com/phalcon/cphalcon',
-    'github-docs'                => 'https://github.com/phalcon/docs',
-    'docs'                       => 'https://docs.phalconphp.com',
-    'download'                   => 'https://phalconphp.com/en/download',
-    'team'                       => 'https://phalconphp.com/en/team',
-    'store'                      => 'https://teespring.com/phalcon',
-    't'                          => 'https://twitter.com/phalconphp',
-    'twitter'                    => 'https://twitter.com/phalconphp',
-    'fb'                         => 'https://www.facebook.com/Phalcon-Framework-134230726685897/',
-    'facebook'                   => 'https://teespring.com/phalcon',
-    'g+'                         => 'https://plus.google.com/u/0/b/102376109340560896457/+PhalconPHP',
-    'gab'                        => 'https://gab.ai/phalcon',
-    'resources'                  => 'http://phalconist.com',
-    'download/latest/x86-70'     => 'https://my.pcloud.com/publink/show?code=XZXsYlZ42Oy3R3pmehiNhieUe0yluyOeNey',
-    'download/latest/x86-70-nts' => 'https://my.pcloud.com/publink/show?code=XZKWYlZaMowNH6UL87hcRCvEtNOWzKS7h6y',
-    'download/latest/x86-56'     => 'https://my.pcloud.com/publink/show?code=XZVsYlZcxOdwPA2MI7XkhPee3vOCbFkLKDX',
-    'download/latest/x86-56-nts' => 'https://my.pcloud.com/publink/show?code=XZHsYlZC61oJWjjrmQxTffxxitMmFn2NqvV',
-    'download/latest/x86-55'     => 'https://my.pcloud.com/publink/show?code=XZGsYlZjrQBkqBkHPJS5CmAGYsVxXT6fhOy',
-    'download/latest/x86-55-nts' => 'https://my.pcloud.com/publink/show?code=XZOsYlZ2PH8ksDI2j0L4XdwAcjJ6HqKerNy',
-    'download/latest/x64-70'     => 'https://my.pcloud.com/publink/show?code=XZjsYlZHSwYSOe8A0X2QmdUUXSaUYHFnHH7',
-    'download/latest/x64-70-nts' => 'https://my.pcloud.com/publink/show?code=XZbsYlZpc7qnvVgdNH853J7I1kMDSaRN5Uk',
-    'download/latest/x64-56'     => 'https://my.pcloud.com/publink/show?code=XZnsYlZhoJabkGmVc8EPiz8CYkV4HfoWDpX',
-    'download/latest/x64-56-nts' => 'https://my.pcloud.com/publink/show?code=XZDsYlZemhOBtrlY50cw7fcdW5hayCl7Owy',
-    'download/latest/x64-55'     => 'https://my.pcloud.com/publink/show?code=XZYDYlZ5Q50SUlOEezGkBObgsLnVm6kg9sV',
-    'download/latest/x64-55-nts' => 'https://my.pcloud.com/publink/show?code=XZQDYlZtBbbYstYpahQP3528hx0A8YFHpSy',
-    'default'                    => 'https://phalconphp.com',
+    'about'                              => 'https://phalconphp.com/en/about',
+    'donate'                             => 'https://patreon.com/phalcon',
+    'fund'                               => 'https://patreon.com/phalcon',
+    'funding'                            => 'https://patreon.com/phalcon',
+    'support_us'                         => 'https://patreon.com/phalcon',
+    'forum'                              => 'https://forum.phalconphp.com',
+    'slack'                              => 'https://phalconchats.slack.com/messages/general/',
+    'github'                             => 'https://github.com/phalcon/cphalcon',
+    'github-docs'                        => 'https://github.com/phalcon/docs',
+    'docs'                               => 'https://docs.phalconphp.com',
+    'download'                           => 'https://phalconphp.com/en/download',
+    'team'                               => 'https://phalconphp.com/en/team',
+    'store'                              => 'https://teespring.com/phalcon',
+    't'                                  => 'https://twitter.com/phalconphp',
+    'twitter'                            => 'https://twitter.com/phalconphp',
+    'fb'                                 => 'https://www.facebook.com/Phalcon-Framework-134230726685897/',
+    'facebook'                           => 'https://teespring.com/phalcon',
+    'g+'                                 => 'https://plus.google.com/u/0/b/102376109340560896457/+PhalconPHP',
+    'gab'                                => 'https://gab.ai/phalcon',
+    'resources'                          => 'http://phalconist.com',
+    'download/linux'                     => 'https://packagecloud.io/phalcon/stable',
+    'download/windows/latest/x86-70'     => 'https://my.pcloud.com/publink/show?code=XZXsYlZ42Oy3R3pmehiNhieUe0yluyOeNey',
+    'download/windows/latest/x86-70-nts' => 'https://my.pcloud.com/publink/show?code=XZKWYlZaMowNH6UL87hcRCvEtNOWzKS7h6y',
+    'download/windows/latest/x86-56'     => 'https://my.pcloud.com/publink/show?code=XZVsYlZcxOdwPA2MI7XkhPee3vOCbFkLKDX',
+    'download/windows/latest/x86-56-nts' => 'https://my.pcloud.com/publink/show?code=XZHsYlZC61oJWjjrmQxTffxxitMmFn2NqvV',
+    'download/windows/latest/x86-55'     => 'https://my.pcloud.com/publink/show?code=XZGsYlZjrQBkqBkHPJS5CmAGYsVxXT6fhOy',
+    'download/windows/latest/x86-55-nts' => 'https://my.pcloud.com/publink/show?code=XZOsYlZ2PH8ksDI2j0L4XdwAcjJ6HqKerNy',
+    'download/windows/latest/x64-70'     => 'https://my.pcloud.com/publink/show?code=XZjsYlZHSwYSOe8A0X2QmdUUXSaUYHFnHH7',
+    'download/windows/latest/x64-70-nts' => 'https://my.pcloud.com/publink/show?code=XZbsYlZpc7qnvVgdNH853J7I1kMDSaRN5Uk',
+    'download/windows/latest/x64-56'     => 'https://my.pcloud.com/publink/show?code=XZnsYlZhoJabkGmVc8EPiz8CYkV4HfoWDpX',
+    'download/windows/latest/x64-56-nts' => 'https://my.pcloud.com/publink/show?code=XZDsYlZemhOBtrlY50cw7fcdW5hayCl7Owy',
+    'download/windows/latest/x64-55'     => 'https://my.pcloud.com/publink/show?code=XZYDYlZ5Q50SUlOEezGkBObgsLnVm6kg9sV',
+    'download/windows/latest/x64-55-nts' => 'https://my.pcloud.com/publink/show?code=XZQDYlZtBbbYstYpahQP3528hx0A8YFHpSy',
+    'default'                            => 'https://phalconphp.com',
 ];
 
 $app = new \Phalcon\Mvc\Micro();
 
-$routeProcess = function ($url, $category, $version) use ($app, $routes) {
+$routeProcess = function ($url, $platform, $category, $version) use ($app, $routes) {
     if (true === empty($url)) {
         $output   = <<<EOF
 <!DOCTYPE html>
@@ -93,7 +94,7 @@ EOF;
     } else {
         $url = strtolower($url);
         if ('download' === $url) {
-            $url = sprintf('download/%s/%s', $category, $version);
+            $url = sprintf('download/%platform/%s/%s',  $platform,$category, $version);
         }
 
         if (true === array_key_exists($url, $routes)) {
@@ -116,6 +117,6 @@ $app->notFound(
     }
 );
 $app->get('/{url}', $routeProcess);
-$app->get('/{url}/{category}/{version}', $routeProcess);
+$app->get('/{url}/{platform}/{category}/{version}', $routeProcess);
 
 $app->handle();
