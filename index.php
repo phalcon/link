@@ -18,7 +18,7 @@ $routes = [
     'download/windows/latest/x64-56-nts' => 'https://my.pcloud.com/publink/show?code=XZDsYlZemhOBtrlY50cw7fcdW5hayCl7Owy',
     'download/windows/latest/x64-55'     => 'https://my.pcloud.com/publink/show?code=XZYDYlZ5Q50SUlOEezGkBObgsLnVm6kg9sV',
     'download/windows/latest/x64-55-nts' => 'https://my.pcloud.com/publink/show?code=XZQDYlZtBbbYstYpahQP3528hx0A8YFHpSy',
-    'facebook'                           => 'https://teespring.com/phalcon',
+    'facebook'                           => 'https://www.facebook.com/Phalcon-Framework-134230726685897/',
     'fb'                                 => 'https://www.facebook.com/Phalcon-Framework-134230726685897/',
     'forum'                              => 'https://forum.phalconphp.com',
     'fund'                               => 'https://patreon.com/phalcon',
