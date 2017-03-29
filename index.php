@@ -51,6 +51,7 @@ $routes = [
     'team/nikolay'                         => 'https://github.com/xboston',
     'team/nikos'                           => 'https://github.com/niden',
     'team/serghei'                         => 'https://github.com/sergeyklay',
+    'team/volodymyr'                       => 'https://github.com/sjinks',
     'tutorial'                             => 'https://docs.phalconphp.com/en/latest/reference/tutorial.html',
     'twitter'                              => 'https://twitter.com/phalconphp',
     'default'                              => 'https://phalconphp.com',
