@@ -4,6 +4,7 @@ $routes = [
     'about'                                => 'https://phalconphp.com/en/about',
     'blog'                                 => 'https://blog.phalconphp.com',
     'compose'                              => 'https://phalcon-compose.readme.io',
+    'discord'                              => 'https://discord.gg/V5REd',
     'docs'                                 => 'https://docs.phalconphp.com',
     'donate'                               => 'https://opencollective.com/phalcon',
     'download'                             => 'https://phalconphp.com/en/download',
