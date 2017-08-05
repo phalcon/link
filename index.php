@@ -141,7 +141,7 @@ $getRedirect  = function ($url, $platform, $category, $version) use ($app, $rout
 
     return $app->response->redirect($redirect, true);
 };
-$routeProcess = function ($url, $platform, $category, $version) use ($app, $routes, $getBase, $getRedirect) {
+$routeProcess = function ($url, $platform = '', $category = '', $version = '') use ($app, $routes, $getBase, $getRedirect) {
     if (true === empty($url)) {
         return $getBase();
     } else {
