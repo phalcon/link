@@ -1,5 +1,9 @@
 <?php
 
+define("PLATFORM", "platform");
+define("LANG", "lang");
+define("PLATFORM_UNSET", "platform unset");
+
 $routes = [
     'about'                                => 'https://phalconphp.com/en/about',
     'blog'                                 => 'https://blog.phalconphp.com',
@@ -110,8 +114,12 @@ EOF;
 
     return $app->response->send();
 };
-$getRedirect  = function ($url, $platform, $category, $version) use ($app, $routes) {
-    $url = strtolower($url);
+
+$verifyUrl = function ($url) use ($routes) {
+    return array_key_exists($url, $routes);
+};
+
+$platformUrlBuilder = function ($url, $platform, $category, $version) use ($verifyUrl, $routes) {
     switch ($url) {
         case 'download':
             switch ($platform) {
@@ -132,15 +140,47 @@ $getRedirect  = function ($url, $platform, $category, $version) use ($app, $rout
             $url = sprintf('team/%s', $platform);
             break;
     }
+    return $verifyUrl($url) ? $routes[$url] : $routes['default'];
+};
 
-    if (true === array_key_exists($url, $routes)) {
-        $redirect = $routes[$url];
+$langUrlBuilder = function ($url, $platform) use ($verifyUrl, $routes) {
+    if ($verifyUrl($url)) {
+        return $routes[$url] . "/" . $platform;
     } else {
-        $redirect = $routes['default'];
+        return $routes['default'];
+    }
+};
+
+$langs = ['ar', 'bg', 'bs', 'cs', 'de', 'el', 'en', 'es', 'fr', 'hr', 'hu', 'id', 'ja', 'pl', 'pt', 'ro', 'ru', 'tr', 'uk', 'vi', 'zh'];
+
+$resolvePlatformOrLang = function ($platformOrLang) use ($langs) {
+    if (isset($platformOrLang)) {
+        return in_array($platformOrLang, $langs) ? LANG : PLATFORM;
+    } else {
+        return PLATFORM_UNSET;
+    }
+};
+
+$getRedirect  = function ($url, $platform, $category, $version) use (
+    $app,
+    $resolvePlatformOrLang,
+    $platformUrlBuilder,
+    $langUrlBuilder)
+{
+    $platformOrLang = $resolvePlatformOrLang($platform);
+    $url = strtolower($url);
+    switch($platformOrLang) {
+        case PLATFORM:
+            $url = $platformUrlBuilder($url, $platform, $category, $version);
+            break;
+        case LANG:
+            $url = $langUrlBuilder($url, $platform);
+            break;
     }
 
-    return $app->response->redirect($redirect, true);
+    return $app->response->redirect($url, true);
 };
+
 $routeProcess = function ($url, $platform = '', $category = '', $version = '') use ($app, $routes, $getBase, $getRedirect) {
     if (true === empty($url)) {
         return $getBase();
