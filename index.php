@@ -4,6 +4,8 @@ define("PLATFORM", "platform");
 define("LANG", "lang");
 define("PLATFORM_UNSET", "platform unset");
 
+$langs = require_once 'langs.php';
+
 $routes = [
     'about'                                => 'https://phalconphp.com/en/about',
     'blog'                                 => 'https://blog.phalconphp.com',
@@ -115,10 +117,6 @@ EOF;
     return $app->response->send();
 };
 
-$verifyUrl = function ($url) use ($routes) {
-    return array_key_exists($url, $routes);
-};
-
 $platformUrlBuilder = function ($url, $platform, $category, $version) use ($verifyUrl, $routes) {
     switch ($url) {
         case 'download':
@@ -140,18 +138,16 @@ $platformUrlBuilder = function ($url, $platform, $category, $version) use ($veri
             $url = sprintf('team/%s', $platform);
             break;
     }
-    return $verifyUrl($url) ? $routes[$url] : $routes['default'];
+    return $routes[$url] ?? $routes['default'];
 };
 
 $langUrlBuilder = function ($url, $platform) use ($verifyUrl, $routes) {
-    if ($verifyUrl($url)) {
+    if (isset($routes[$url])) {
         return $routes[$url] . "/" . $platform;
     } else {
         return $routes['default'];
     }
 };
-
-$langs = ['ar', 'bg', 'bs', 'cs', 'de', 'el', 'en', 'es', 'fr', 'hr', 'hu', 'id', 'ja', 'pl', 'pt', 'ro', 'ru', 'tr', 'uk', 'vi', 'zh'];
 
 $resolvePlatformOrLang = function ($platformOrLang) use ($langs) {
     if (isset($platformOrLang)) {
