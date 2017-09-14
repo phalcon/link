@@ -3,6 +3,7 @@
 $routes = [
     'about'                                => 'https://phalconphp.com/en/about',
     'blog'                                 => 'https://blog.phalconphp.com',
+    'builtwith'                            => 'https://builtwith.phalconphp.com',
     'compose'                              => 'https://phalcon-compose.readme.io',
     'discord'                              => 'https://discord.gg/kRc2N2M',
     'docs'                                 => 'https://docs.phalconphp.com',
