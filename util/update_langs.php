@@ -9,6 +9,11 @@ curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, ['json' => 1]);
 
 try {
+  if(file_exists('langs.php')) {
+    print_r('Creating backup of existing langs.php called langs.php.bak' . PHP_EOL);
+    copy('langs.php', 'langs.php.bak');
+  }
+
   $result = curl_exec($ch);
   if (curl_errno($ch)) {
     throw new Exception(curl_error($ch));
@@ -40,6 +45,11 @@ try {
   fwrite($fp, '# RUN $ ./deploy TO REGENERATE' . PHP_EOL);
   fwrite($fp, $langs_code . PHP_EOL);
   fclose($fp);
+
+  if(file_exists('langs.php.bak')) {
+    print_r('Removing old langs.php.bak' . PHP_EOL);
+    unlink('langs.php.bak');
+  }
 } catch (Exception $e) {
   echo $e->getMessage() . PHP_EOL;
   echo $e->getTraceAsString(). PHP_EOL;
