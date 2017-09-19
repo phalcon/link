@@ -53,4 +53,8 @@ try {
 } catch (Exception $e) {
   echo $e->getMessage() . PHP_EOL;
   echo $e->getTraceAsString(). PHP_EOL;
+  print_r('Langs could not be retrieved please review errors.' . PHP_EOL .
+    'Previous Langs should have been untouched but a backup was made at' . PHP_EOL .
+    'langs.php.bak for your convenience' . PHP_EOL
+  );
 }
