@@ -50,6 +50,7 @@ $routes = [
     'sample-apps'                          => 'https://docs.phalconphp.com/en/latest/reference/tutorial.html#sample-applications',
     'slack'                                => 'https://slack.phalconphp.com/',
     'so'                                   => 'https://stackoverflow.com/questions/tagged/phalcon',
+    'sponsors'                             => 'https://phalconphp.com/en/sponsors',
     'store'                                => 'https://store.phalconphp.com',
     'support_us'                           => 'https://opencollective.com/phalcon',
     't'                                    => 'https://twitter.com/phalconphp',
