@@ -4,6 +4,10 @@ google_analytics: ""
 
 permalink: /:title/
 
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 exclude:
   - vendor
   - Gemfile.lock
