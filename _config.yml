@@ -8,6 +8,9 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+include:
+  - _redirects
+
 exclude:
   - vendor
   - Gemfile.lock
