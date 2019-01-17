@@ -1,0 +1,15 @@
+title: Phalcon Link
+description: URL Shortener service for https://phalcon.link
+google_analytics: ""
+
+permalink: /:title/
+
+exclude:
+  - vendor
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+
+
+
