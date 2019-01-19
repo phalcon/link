@@ -53,3 +53,25 @@
 /download/windows/previous/x64-55        https://github.com/phalcon/cphalcon/releases/tag/v3.4.2
 /download/windows/previous/x64-55-nts    https://github.com/phalcon/cphalcon/releases/tag/v3.4.2
 
+# Documents Redirects
+/docs/en                                 https://docs.phalconphp.com/en/3.4
+/docs/ar                                 https://docs.phalconphp.com/ar/3.4
+/docs/bs                                 https://docs.phalconphp.com/bs/3.4
+/docs/bg                                 https://docs.phalconphp.com/bg/3.4
+/docs/zh-CN                              https://docs.phalconphp.com/zh-CN/3.4
+/docs/hr                                 https://docs.phalconphp.com/hr/3.4
+/docs/cs                                 https://docs.phalconphp.com/cs/3.4
+/docs/fr                                 https://docs.phalconphp.com/fr/3.4
+/docs/de                                 https://docs.phalconphp.com/de/3.4
+/docs/el                                 https://docs.phalconphp.com/el/3.4
+/docs/hu                                 https://docs.phalconphp.com/hu/3.4
+/docs/id                                 https://docs.phalconphp.com/id/3.4
+/docs/ja                                 https://docs.phalconphp.com/ja/3.4
+/docs/pl                                 https://docs.phalconphp.com/pl/3.4
+/docs/pt-PT                              https://docs.phalconphp.com/pt-PT/3.4
+/docs/ro                                 https://docs.phalconphp.com/ro/3.4
+/docs/ru                                 https://docs.phalconphp.com/ru/3.4
+/docs/es-ES                              https://docs.phalconphp.com/es-ES/3.4
+/docs/tr                                 https://docs.phalconphp.com/tr/3.4
+/docs/uk                                 https://docs.phalconphp.com/uk/3.4
+/docs/vi                                 https://docs.phalconphp.com/vi/3.4
