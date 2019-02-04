@@ -1,6 +1,6 @@
 title: Phalcon Link
 description: URL Shortener service for https://phalcon.link
-google_analytics: ""
+analytics: "UA-133802124-1"
 
 permalink: /:title/
 
