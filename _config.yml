@@ -1,18 +1,32 @@
 title: Phalcon Link
-description: URL Shortener service for https://phalcon.link
-analytics: "UA-133802124-1"
+app:
+  name: Phalcon Link
+  author: 'Phalcon Team'
+  description: 'URL Shortener service for https://phalcon.link'
+  keywords: ''
 
-permalink: /:title/
+social:
+  email: team@phalconphp.com
+  facebook:
+  github: phalcon
+  rss: phalcon
+  twitter: phalconphp
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+meta:
+  analytics: "UA-133802124-1"
 
 include:
   - _redirects
 
+permalink: /:title
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    disable: true
+
 exclude:
   - vendor
+  - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md

@@ -1,37 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="{{ site.description }}">
-    <meta name="author" content="Phalcon Team">
-    <title>{{ site.title }}</title>
-    
-    <link rel="shortcut icon"
-          type="image/png"
-          href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
-    
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css"
-          integrity="sha256-azvvU9xKluwHFJ0Cpgtf0CYzK7zgtOznnzxV4924X1w="
-          crossorigin="anonymous" />
-    {% if "" != site.analytics %}
-    <script>
-        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-        ga('create', '{{ site.analytics }}', '{{ site.url }}');
-        ga('send', 'pageview');
-    </script>
-    <script async src='https://www.google-analytics.com/analytics.js'></script>
-    {% endif %}
+    {% include meta.html %}
+    {% include analytics.html %}
 </head>
-
 <body>
+{% include header.html %}
+
+<div class="phalcon-blog">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                {{ content }}
-            </div>
+        <div class="phalcon-blog__main">
+            {{ content }}
+        </div>
+        <div class="phalcon-blog__right">
+            {% include sponsors.html %}
+            {% include widget.html %}
         </div>
     </div>
+</div>
+{% include footer.html %}
 </body>
 </html>
+
