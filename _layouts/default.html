@@ -10,7 +10,15 @@
 <div class="phalcon-blog">
     <div class="container">
         <div class="phalcon-blog__main">
-            {{ content }}
+            <div class="phalcon-blog__last-article">
+                <div class="phalcon-blog__item">
+                    <div class="phalcon-blog__item-content">
+                        <div class="phalcon-blog__item-article-block">
+                            {{ content }}
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="phalcon-blog__right">
             {% include sponsors.html %}

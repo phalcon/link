@@ -1077,7 +1077,7 @@ a:focus {
     right: -12px;
     top: 7px; }
 
-.phalcon-blog__item-article {
+.phalcon-blog__item-article .phalcon-blog__item-article-block{
   font-size: 14px;
   color: #68727e;
   max-height: 81px;
@@ -1512,3 +1512,13 @@ body {
 *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+.phalcon-blog__item-article-block{
+  font-size: 14px;
+  color: #68727e;
+  margin-bottom: 11px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical; }
