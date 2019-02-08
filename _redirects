@@ -36,6 +36,12 @@
 /youtube                                 https://www.youtube.com/c/PhalconPHP
 
 /download/linux                          https://packagecloud.io/phalcon/stable
+/download/windows/latest/x86-73          https://github.com/phalcon/cphalcon/releases/latest
+/download/windows/latest/x86-73-nts      https://github.com/phalcon/cphalcon/releases/latest
+/download/windows/latest/x86-72          https://github.com/phalcon/cphalcon/releases/latest
+/download/windows/latest/x86-72-nts      https://github.com/phalcon/cphalcon/releases/latest
+/download/windows/latest/x86-71          https://github.com/phalcon/cphalcon/releases/latest
+/download/windows/latest/x86-71-nts      https://github.com/phalcon/cphalcon/releases/latest
 /download/windows/latest/x86-70          https://github.com/phalcon/cphalcon/releases/latest
 /download/windows/latest/x86-70-nts      https://github.com/phalcon/cphalcon/releases/latest
 /download/windows/latest/x86-56          https://github.com/phalcon/cphalcon/releases/latest

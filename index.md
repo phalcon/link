@@ -36,6 +36,12 @@ layout: default
 | [/team/volodymyr](https://github.com/sjinks)                                                     | https://github.com/sjinks                                   |
 | [/tutorial](https://docs.phalconphp.com/latest/en/tutorial)                                      | https://docs.phalconphp.com/latest/en/tutorial              |
 | [/download/linux](https://packagecloud.io/phalcon/stable)                                        | https://packagecloud.io/phalcon/stable                      |
+| [/download/windows/latest/x86-73](https://github.com/phalcon/cphalcon/releases/latest)           | https://github.com/phalcon/cphalcon/releases/latest         |
+| [/download/windows/latest/x86-73-nts](https://github.com/phalcon/cphalcon/releases/latest)       | https://github.com/phalcon/cphalcon/releases/latest         |
+| [/download/windows/latest/x86-72](https://github.com/phalcon/cphalcon/releases/latest)           | https://github.com/phalcon/cphalcon/releases/latest         |
+| [/download/windows/latest/x86-72-nts](https://github.com/phalcon/cphalcon/releases/latest)       | https://github.com/phalcon/cphalcon/releases/latest         |
+| [/download/windows/latest/x86-71](https://github.com/phalcon/cphalcon/releases/latest)           | https://github.com/phalcon/cphalcon/releases/latest         |
+| [/download/windows/latest/x86-71-nts](https://github.com/phalcon/cphalcon/releases/latest)       | https://github.com/phalcon/cphalcon/releases/latest         |
 | [/download/windows/latest/x86-70](https://github.com/phalcon/cphalcon/releases/latest)           | https://github.com/phalcon/cphalcon/releases/latest         |
 | [/download/windows/latest/x86-70-nts](https://github.com/phalcon/cphalcon/releases/latest)       | https://github.com/phalcon/cphalcon/releases/latest         |
 | [/download/windows/latest/x86-56](https://github.com/phalcon/cphalcon/releases/latest)           | https://github.com/phalcon/cphalcon/releases/latest         |
