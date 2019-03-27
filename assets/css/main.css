@@ -659,7 +659,7 @@ a:focus {
   top: -2px;
   margin-left: 5px; }
 .header-nav--mobile {
-  width: 224px;
+  width: 230px;
   height: 100%;
   padding: 20px;
   position: fixed;
@@ -1072,8 +1072,7 @@ a:focus {
   margin-bottom: 35px; }
 
 .phalcon-blog__item-content {
-  width: 100%;
-}
+  width: 100%; }
 
 .phalcon-blog__item-img {
   display: block;
@@ -1139,7 +1138,7 @@ a:focus {
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   line-height: 20px; }
@@ -1166,12 +1165,6 @@ a:focus {
   transition: all .125s; }
 .phalcon-blog__item-read-more:hover {
   border-bottom-color: transparent; }
-
-@media (min-width: 767px) {
-  .phalcon-blog__item-article {
-    -webkit-line-clamp: 4;
-  }
-}
 
 .phalcon-blog__main-title {
   text-transform: uppercase;
@@ -1211,7 +1204,8 @@ a:focus {
   display: flex;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-right: -15px; }
 
 .phalcon-blog__title {
   margin-bottom: 15px;
@@ -1367,6 +1361,8 @@ a:focus {
   .phalcon-blog__right {
     width: 280px;
     margin-left: 20px; }
+  .phalcon-blog__sponsors-items {
+    margin-right: -10px; }
   .phalcon-blog__sponsors-item {
     margin-right: 10px;
     margin-bottom: 10px;
@@ -1413,6 +1409,10 @@ a:focus {
     -webkit-order: -1;
     -ms-flex-order: -1;
     order: -1; } }
+
+@media (max-width: 767px) {
+  .phalcon-blog__item-article {
+    -webkit-line-clamp: 6; } }
 
 .phalcon-blog-detail__info {
   display: -webkit-box;
@@ -1577,6 +1577,7 @@ phalcon-blog-detail .phalcon-blog-detail__author a {
 .phalcon-blog-detail ul {
   margin-bottom: 25px;
   margin-top: 10px;
+  padding-left: 30px;
   color: #273646;
   display: block;
   max-width: 100%;
@@ -1610,6 +1611,9 @@ phalcon-blog-detail .phalcon-blog-detail__author a {
   line-height: 23px;
   font-size: 16px;
   max-width: 100%; }
+.phalcon-blog-detail .phalcon-blog-detail__author a {
+  font-size: 12px;
+  line-height: 12px; }
 .phalcon-blog-detail .headline {
   margin-bottom: 10px; }
 .phalcon-blog-detail .hljs {
@@ -1678,13 +1682,3 @@ body {
 @supports (-webkit-overflow-scrolling: touch) {
   body {
     cursor: pointer; } }
-
-.phalcon-blog__sponsors {
-  margin-right: -10px;
-}
-
-@media (min-width: 1439px) {
-  .phalcon-blog__sponsors {
-    margin-right: -15px;
-  }
-} 
