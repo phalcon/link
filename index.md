@@ -34,6 +34,7 @@ layout: default
 | [/team/nikos](https://github.com/niden)                                                          | https://github.com/niden                                    |
 | [/team/serghei](https://github.com/sergeyklay)                                                   | https://github.com/sergeyklay                               |
 | [/team/volodymyr](https://github.com/sjinks)                                                     | https://github.com/sjinks                                   |
+| [/telegram](https://t.me/phalcon_news)                                                           | https://t.me/phalcon_news   
 | [/tutorial](https://docs.phalconphp.com/latest/en/tutorial)                                      | https://docs.phalconphp.com/latest/en/tutorial              |
 | [/download/linux](https://packagecloud.io/phalcon/stable)                                        | https://packagecloud.io/phalcon/stable                      |
 | [/download/windows/latest/x86-73](https://github.com/phalcon/cphalcon/releases/latest)           | https://github.com/phalcon/cphalcon/releases/latest         |
