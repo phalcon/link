@@ -1759,3 +1759,9 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
+
+/*custom phalcon link*/
+
+@media (max-width: 767px) {
+  .phalcon-blog__item-article-block {
+    overflow-x: auto; } }
