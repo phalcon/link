@@ -58,14 +58,14 @@
 /download/windows/latest/x64-56-nts      https://github.com/phalcon/cphalcon/releases/latest
 /download/windows/latest/x64-55          https://github.com/phalcon/cphalcon/releases/latest
 /download/windows/latest/x64-55-nts      https://github.com/phalcon/cphalcon/releases/latest
-/download/windows/previous/x86-56        https://github.com/phalcon/cphalcon/releases/tag/v3.4.3
-/download/windows/previous/x86-56-nts    https://github.com/phalcon/cphalcon/releases/tag/v3.4.3
-/download/windows/previous/x86-55        https://github.com/phalcon/cphalcon/releases/tag/v3.4.3
-/download/windows/previous/x86-55-nts    https://github.com/phalcon/cphalcon/releases/tag/v3.4.3
-/download/windows/previous/x64-56        https://github.com/phalcon/cphalcon/releases/tag/v3.4.3
-/download/windows/previous/x64-56-nts    https://github.com/phalcon/cphalcon/releases/tag/v3.4.3
-/download/windows/previous/x64-55        https://github.com/phalcon/cphalcon/releases/tag/v3.4.3
-/download/windows/previous/x64-55-nts    https://github.com/phalcon/cphalcon/releases/tag/v3.4.3
+/download/windows/previous/x86-56        https://github.com/phalcon/cphalcon/releases/tag/v3.4.4
+/download/windows/previous/x86-56-nts    https://github.com/phalcon/cphalcon/releases/tag/v3.4.4
+/download/windows/previous/x86-55        https://github.com/phalcon/cphalcon/releases/tag/v3.4.4
+/download/windows/previous/x86-55-nts    https://github.com/phalcon/cphalcon/releases/tag/v3.4.4
+/download/windows/previous/x64-56        https://github.com/phalcon/cphalcon/releases/tag/v3.4.4
+/download/windows/previous/x64-56-nts    https://github.com/phalcon/cphalcon/releases/tag/v3.4.4
+/download/windows/previous/x64-55        https://github.com/phalcon/cphalcon/releases/tag/v3.4.4
+/download/windows/previous/x64-55-nts    https://github.com/phalcon/cphalcon/releases/tag/v3.4.4
 
 # Documents Redirects
 /docs/en                                 https://docs.phalconphp.com/3.4/en
