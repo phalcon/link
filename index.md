@@ -20,6 +20,7 @@ layout: default
 | [/github-docs](https://github.com/phalcon/docs)                                                  | https://github.com/phalcon/docs                             |
 | [/license](https://license.phalconphp.com)                                                       | https://license.phalconphp.com                              |
 | [/mewe](https://mewe.com/join/phalcon)                                                           | https://mewe.com/join/phalcon                               |
+| [/parler](https://parler.com/profile/phalcon)                                                    | https://parler.com/profile/phalcon                          |
 | [/resources](https://phalconist.phalconphp.com)                                                  | https://phalconist.phalconphp.com                           |
 | [/slack](https://phalconchats.slack.com)                                                         | https://phalconchats.slack.com                              |
 | [/so](https://stackoverflow.com/questions/tagged/phalcon)                                        | https://stackoverflow.com/questions/tagged/phalcon          |
