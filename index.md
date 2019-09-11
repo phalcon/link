@@ -29,6 +29,7 @@ layout: default
 | [/store](https://store.phalconphp.com)                                                           | https://store.phalconphp.com                                |
 | [/support_us](https://opencollective.com/phalcon)                                                | https://opencollective.com/phalcon                          |
 | [/support](https://phalconphp.com/en/support)                                                    | https://phalconphp.com/en/support                           |
+| [/status](https://status.uptrends.com/b0a07ab037fa4a8e992aee506a734fd9)                          | https://status.uptrends.com/b0a07ab037fa4a8e992aee506a734fd9|
 | [/t](https://twitter.com/phalconphp)                                                             | https://twitter.com/phalconphp                              |
 | [/twitter](https://twitter.com/phalconphp)                                                       | https://twitter.com/phalconphp                              |
 | [/team](https://phalconphp.com/en/team)                                                          | https://phalconphp.com/en/team                              |
