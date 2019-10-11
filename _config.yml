@@ -4,6 +4,7 @@ app:
   author: 'Phalcon Team'
   description: 'URL Shortener service for https://phalcon.link'
   keywords: ''
+  url: https://phalcon.link
 
 social:
   email: team@phalconphp.com
