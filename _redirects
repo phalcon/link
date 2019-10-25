@@ -1,4 +1,50 @@
-/about                                   https://phalconphp.com/en/about
+/interview-with-phalconphp-creator-andres-guitierrez                  https://blog.phalcon.io/post/interview-with-phalconphp-creator-andres-gutierrez
+/phalcon-2-0-differences-with-phalcon-1-3-and-why-you-should-upgrade  https://blog.phalcon.io/post/phalcon-2-0-differences-with-phalcon-1-3-and-why-you-should-upgrade
+/adding-tratis-to-a-phalconphp-project                                https://blog.phalcon.io/post/adding-traits-to-a-phalconphp-project
+/phalconphp-and-php7                                                  https://blog.phalcon.io/post/phalconphp-and-php7
+/living-on-the-edge-of-phalconphp                                     https://blog.phalcon.io/post/living-on-the-edge-of-phalconphp
+/performing-a-route-redirection-in-phalconphp                         https://blog.phalcon.io/post/performing-a-route-redirection-in-phalconphp
+/http://phalcon.io/setting-up-phalconphp-with-environment-variables   https://blog.phalcon.io/post/http://phalcon.io/setting-up-phalconphp-with-environment-variables
+
+/                                        /en-us
+/ar/*                                    /ar-sa/:splat
+/bg/*                                    /bg-bg/:splat
+/ca/*                                    /ca-es/:splat
+/cs/*                                    /cs-cz/:splat
+/da/*                                    /da-dk/:splat
+/de/*                                    /de-de/:splat
+/el/*                                    /el-gr/:splat
+/en/*                                    /en-us/:splat
+/es/*                                    /es-es/:splat
+/fa/*                                    /fa-ir/:splat
+/fr/*                                    /fr-fr/:splat
+/hu/*                                    /hu-hu/:splat
+/hy/*                                    /hy-am/:splat
+/id/*                                    /id-id/:splat
+/it/*                                    /it-it/:splat
+/ja/*                                    /ja-jp/:splat
+/kk/*                                    /kk-kz/:splat
+/km/*                                    /km-kh/:splat
+/ko/*                                    /ko-kr/:splat
+/lt/*                                    /lt-lt/:splat
+/lv/*                                    /lv-lv/:splat
+/nl/*                                    /nl-nl/:splat
+/no/*                                    /no-no/:splat
+/pl/*                                    /pl-pl/:splat
+/pt/*                                    /pt-pt/:splat
+/ro/*                                    /ro-ro/:splat
+/ru/*                                    /ru-ru/:splat
+/sk/*                                    /sk-sk/:splat
+/sv/*                                    /sv-se/:splat
+/th/*                                    /th-th/:splat
+/tl/*                                    /tl-ph/:splat
+/tr/*                                    /tr-tr/:splat
+/uk/*                                    /uk-ua/:splat
+/vi/*                                    /vi-vn/:splat
+/zh/*                                    /zh-cn/:splat
+
+
+/about                                   /en/about
 /api                                     https://docs.phalcon.io/latest/en/api
 /bitchute                                https://www.bitchute.com/channel/phalcon/
 /blog                                    https://blog.phalcon.io
@@ -13,7 +59,7 @@
 /forum                                   https://forum.phalconphp.com
 /fund                                    https://opencollective.com/phalcon
 /funding                                 https://opencollective.com/phalcon
-/gab                                     https://gab.ai/phalcon
+/gab                                     https://gab.com/phalcon
 /github                                  https://github.com/phalcon/cphalcon
 /github-docs                             https://github.com/phalcon/docs
 /lbry                                    https://beta.lbry.tv/@PhalconPHP:0
@@ -21,25 +67,23 @@
 /mewe                                    https://mewe.com/join/phalcon
 /oldreleases                             https://my.pcloud.com/publink/show?code=kZcSf3Zf849QWNfxjffdrSO6PptJut9lnOX
 /parler                                  https://parler.com/profile/phalcon
-/resources                               https://phalconist.phalconphp.com
 /reddit                                  https://www.reddit.com/r/phalcon
-/slack                                   https://phalconchats.slack.com
 /so                                      https://stackoverflow.com/questions/tagged/phalcon
-/sponsors                                https://phalconphp.com/en/sponsors
+/sponsors                                /en/sponsors
 /status                                  https://status.uptrends.com/b0a07ab037fa4a8e992aee506a734fd9
 /store                                   https://store.phalconphp.com
 /support_us                              https://opencollective.com/phalcon
-/support                                 https://phalconphp.com/en/support
+/support                                 /en/support
 /t                                       https://twitter.com/phalconphp
 /telegram                                https://t.me/phalcon_news
 /twitter                                 https://twitter.com/phalconphp
-/team                                    https://phalconphp.com/en/team
+/team                                    /en/team
 /team/andres                             https://github.com/andresgutierrez
 /team/nikos                              https://github.com/niden
 /team/serghei                            https://github.com/sergeyklay
-/team/volodymyr                          https://github.com/sjinks
+/team/ruud                               https://github.com/ruudboon
 /telegram                                https://t.me/phalcon_news
-/tutorial                                https://docs.phalcon.io/latest/en/tutorial
+/tutorial                                https://docs.phalcon.io/latest/en/tutorial-basic
 /yt                                      https://www.youtube.com/c/PhalconPHP
 /youtube                                 https://www.youtube.com/c/PhalconPHP
 
@@ -71,28 +115,3 @@
 /download/windows/previous/x64-55        https://github.com/phalcon/cphalcon/releases/tag/v3.4.4
 /download/windows/previous/x64-55-nts    https://github.com/phalcon/cphalcon/releases/tag/v3.4.4
 
-# Documents Redirects
-/docs/en/*                               https://docs.phalcon.io/3.4/en/:splat
-/docs/zh-CN/*                            https://docs.phalcon.io/3.4/zh-cn/:splat
-/docs/cs/*                               https://docs.phalcon.io/3.4/cs-cz/:splat
-/docs/fr/*                               https://docs.phalcon.io/3.4/fr-fr/:splat
-/docs/de/*                               https://docs.phalcon.io/3.4/de-de/:splat
-/docs/ja/*                               https://docs.phalcon.io/3.4/ja-jp/:splat
-/docs/id/*                               https://docs.phalcon.io/3.4/id-id/:splat
-/docs/pl/*                               https://docs.phalcon.io/3.4/pl-pl/:splat
-/docs/ru/*                               https://docs.phalcon.io/3.4/ru-ru/:splat
-/docs/es-ES/*                            https://docs.phalcon.io/3.4/es-es/:splat
-/docs/tr/*                               https://docs.phalcon.io/3.4/tr-tr/:splat
-/docs/uk/*                               https://docs.phalcon.io/3.4/uk-ua/:splat
-
-# 404 :(
-#------------------------------------------------------------------------------
-#/docs/vi/*                              https://docs.phalcon.io/3.4/en/:splat
-#/docs/ro/*                              https://docs.phalcon.io/3.4/en/:splat
-#/docs/pt-PT/*                           https://docs.phalcon.io/3.4/en/:splat
-#/docs/hu/*                              https://docs.phalcon.io/3.4/en/:splat
-#/docs/el/*                              https://docs.phalcon.io/3.4/en/:splat
-#/docs/hr/*                              https://docs.phalcon.io/3.4/en/:splat
-#/docs/ar/*                              https://docs.phalcon.io/3.4/en/:splat
-#/docs/bs/*                              https://docs.phalcon.io/3.4/en/:splat
-#/docs/bg/*                              https://docs.phalcon.io/3.4/en/:splat
