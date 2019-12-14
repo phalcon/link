@@ -4,17 +4,16 @@ app:
   author: 'Phalcon Team'
   description: 'URL Shortener service for https://phalcon.link'
   keywords: ''
+  analytics: "UA-133802124-1"
   url: https://phalcon.link
 
+url: https://phalcon.link
 social:
-  email: team@phalconphp.com
+  email: team@phalcon.io
   facebook:
   github: phalcon
   rss: phalcon
   twitter: phalconphp
-
-meta:
-  analytics: "UA-133802124-1"
 
 include:
   - _redirects
@@ -25,13 +24,13 @@ kramdown:
   syntax_highlighter_opts:
     disable: true
 
+# Exclude these files from your production _site
 exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md
-  - CNAME
-
-
-
+  - vendor
+  - serve
+  - updateData.php
